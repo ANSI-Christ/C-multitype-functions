@@ -13,7 +13,7 @@ multitype(double) f2(int x){
   
 int main()
 {
-    multitypeInit();
+    if(multitypeInit()) atexit(multitypeClose);
     char a;
     float b;
     double c=0.;
