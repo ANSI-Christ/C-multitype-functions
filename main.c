@@ -1,4 +1,3 @@
-#define MULTITYPE_IMPL
 #include "multitype.h"
 
 multitype(double,char,float) f1(int x){
@@ -13,7 +12,6 @@ multitype(double) f2(int x){
   
 int main()
 {
-    if(multitypeInit()) atexit(multitypeClose);
     char a;
     float b;
     double c=0.;
