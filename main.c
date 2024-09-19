@@ -1,4 +1,8 @@
+#define MULTITYPE_IMPL
 #include "multitype.h"
+
+#include <stdio.h>
+#include <stdlib.h>
 
 multitype(double,char,float) f1(int x){
     char symb='0'+x;
@@ -15,6 +19,8 @@ int main()
     char a;
     float b;
     double c=0.;
+    if(multitype_init())
+        atexit(multitype_close);
     
     let(,a,b)=f1(1);
     printf("%f %c %f\n",c,a,b);
