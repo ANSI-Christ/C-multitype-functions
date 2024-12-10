@@ -1,4 +1,7 @@
+#define MULTITYPE_IMPL
 #include "multitype.h"
+
+#include <stdio.h>
 
 multitype(double,char,float) f1(int x){
     char symb='0'+x;
