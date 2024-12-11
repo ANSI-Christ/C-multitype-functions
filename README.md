@@ -2,11 +2,11 @@
 
 Allow function returns a few variables:
 
-multitype(double, char, int) f(){
+  multitype(double, char, int) f(){
     return (1.1,'$', 4);
-}
+  }
 
-void test(){
+  void test(){
     double a=0;
     char b;
     int c;
@@ -14,9 +14,8 @@ void test(){
     let(,b,c)=f();
 
     let(a,b,c)=f();
-}
+  }
 
-Important: don't #include multitype.c, it must be compilled as transaltion unit!
 
 
 
