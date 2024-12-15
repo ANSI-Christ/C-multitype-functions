@@ -15,7 +15,7 @@ Allow function returns a few variables:
       let(a,b,c)=f();
     }
 
-
+Look for usage examples in main.c
 
 
 
