@@ -12,13 +12,13 @@ multitype(double) f2(int x){
     char symb='0'+x;
     return (x+14.);
 }
-  
+
 int main()
 {
     char a;
     float b;
     double c=0.;
-    
+
     let(,a,b)=f1(1);
     printf("%f %c %f\n",c,a,b);
 
